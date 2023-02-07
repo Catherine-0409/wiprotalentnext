@@ -1,5 +1,5 @@
 # wiprotalentnext
-program 1
+program 1 - Find string code
 
 import java.io.*;
 import java.util.*;
@@ -23,7 +23,7 @@ String value=Integer.toString(sum);
  return Integer.parseInt(value2);
  }}
 
-program 2
+program 2 - Get code through string
 
 import java.io.*;
 import java.util.*;
@@ -38,7 +38,7 @@ sum+=word[i].length();
 return (1 + (sum-1) %9); 
 }}
 
-program 3
+program 3 - Add number string
 
 import java.io.*;
 import java.util.*;
