@@ -91,3 +91,107 @@ break;
 return pcount;
 }
 }
+
+program 5 - digit sum 
+
+import java.io.*;
+import  java.util.*;
+class UserMainCode
+{
+                public int digitSum(int input1){
+                                int neg=input1;
+                                if(input1<0)
+                                {
+                                                input1*=-1;
+                                }
+                                int len=Integer.toString(input1).length();
+                                if(len==1)
+                                {
+                                                if(neg<0)
+                                                return input1*-1;
+                                                else
+                                                                return input1;
+                                }
+                                else
+                                {
+                                                int sum=0;
+                                while(input1!=0)
+                                {
+                                                int rem=input1%10;
+                                                sum+=rem;
+                                                input1/=10;
+                                }
+                                                if(neg<0)
+                                                                return digitSum(sum*-1);
+                                                else
+                                                                return digitSum(sum);
+                }}
+}
+
+program 6 - even digits sum
+
+import java.io.*;
+import  java.util.*;
+class UserMainCode
+{
+public int EvenDigitsSum(int inpu1){
+int sum=0;
+while(input1!=0)
+{
+int n=input1%10;
+if(n%2==0)
+sum+=n;
+input1/=10; 
+}
+return sum;
+}
+
+program 7 - odd digits sum 
+
+import java.io.*;
+import  java.util.*;
+class UserMainCode
+{
+public int OddDigitsSum(int inpu1){
+int sum=0;
+while(input1!=0)
+{
+int n=input1%10;
+if(n%2!=0)
+sum+=n;
+input1/=10; 
+}
+return sum;
+}
+
+program 8 - even or odd digits sum
+
+import java.io.*;
+import  java.util.*;
+class UserMainCode
+{
+public int OddDigitsSum(int input1,String input2){
+      int sum=0;
+        if(input2.equals("even"))
+        {
+while(input1!=0)
+    {
+ int n=input1%10;
+ if(n%2==0)
+    sum+=n;
+  input1/=10; 
+    }
+        }
+        else
+        {
+    while(input1!=0)
+    {
+     int n=input1%10;
+   if(n%2!=0)
+    sum+=n;
+  input1/=10; 
+    }
+        }
+       return sum;
+    }
+}
